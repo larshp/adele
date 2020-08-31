@@ -66,8 +66,6 @@ CLASS ZCL_ADELE_RFC_ACCESS IMPLEMENTATION.
 
   METHOD zif_adele_rfc_access~add_param.
 
-    DATA: ls_selpar TYPE rsparams.
-
 *   add default param
     APPEND INITIAL LINE TO mt_selopt ASSIGNING FIELD-SYMBOL(<ls_param>).
     <ls_param>-name   = iv_param.
@@ -88,7 +86,6 @@ CLASS ZCL_ADELE_RFC_ACCESS IMPLEMENTATION.
 
 
   METHOD zif_adele_rfc_access~add_param_interval.
-    DATA: ls_selpar TYPE rsparams.
 
 *   add default param
     APPEND INITIAL LINE TO mt_selopt ASSIGNING FIELD-SYMBOL(<ls_param>).
